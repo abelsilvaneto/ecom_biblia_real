@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Entrega</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style_cad.css">
+    <script src="../js/config.js"></script>
+    <script src="../js/entrega_consultar.js" defer></script>
+</head>
+<body>
+    <main>
+        <section class="card">
+            <h2>Consultar Entrega</h2>
+            <form id="form-consultar">
+                <label for="id">ID da Entrega:</label><br>
+                <input type="number" id="id" name="id" required><br><br>
+                <button type="submit" id="btn_consultar" class="btn">Buscar</button>
+            </form>
+            <div id="resposta" class="resposta"></div>
+        </section>
+    </main>
+</body>
+</html>

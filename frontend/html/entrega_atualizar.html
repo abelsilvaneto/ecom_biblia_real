@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atualizar Entrega</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style_cad.css">
+    <script src="../js/config.js"></script>
+    <script src="../js/entrega_atualizar.js" defer></script>
+</head>
+<body>
+    <main>
+        <section class="card">
+            <h2>Atualizar Entrega</h2>
+            <form id="form-atualizar">
+                <label for="id">ID da Entrega:</label><br>
+                <input type="number" id="id" name="id" required><br><br>
+
+                <label for="IdPedido">Código do Pedido:</label><br>
+                <input type="number" id="IdPedido" name="IdPedido" required><br><br>
+
+                <label for="cep">CEP:</label><br>
+                <input type="text" id="cep" name="cep" required><br><br>
+
+                <label for="rua">Rua / Logradouro:</label><br>
+                <input type="text" id="rua" name="rua" required><br><br>
+
+                <label for="numero">Número:</label><br>
+                <input type="text" id="numero" name="numero" required><br><br>
+
+                <label for="bairro">Bairro:</label><br>
+                <input type="text" id="bairro" name="bairro" required><br><br>
+
+                <label for="cidade">Cidade:</label><br>
+                <input type="text" id="cidade" name="cidade" required><br><br>
+
+                <label for="estado">Estado (UF):</label><br>
+                <input type="text" id="estado" name="estado" maxlength="2" required><br><br>
+
+                <button type="submit" id="btn_atualizar" class="btn">Atualizar Entrega</button>
+            </form>
+            <div id="resposta" class="resposta"></div>
+        </section>
+    </main>
+</body>
+</html>

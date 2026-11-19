@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_cad.css">
+    <script src="./js/config.js"></script>
+    <script src="./js/login.js" defer></script>
+    <title>Sistema de Gerenciamento</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="./index.html">Home</a><br><br>
+
+            <span class="titulo_menu">Usuários</span>&emsp;
+            <a href="./html/usuario_cadastrar.html">Cadastrar</a>&emsp;
+            <a href="./html/usuario_listar.html">Listar</a>&emsp;
+            <a href="./html/usuario_consultar.html">Consultar</a>&emsp;
+            <a href="./html/usuario_atualizar.html">Atualizar</a>&emsp;
+            <a href="./html/usuario_apagar.html">Apagar</a><br><br>
+
+            <span class="titulo_menu">Categorias</span>&emsp;
+            <a href="./html/categoria_cadastrar.html">Cadastrar</a>&emsp;
+            <a href="./html/categoria_listar.html">Listar</a>&emsp;
+            <a href="./html/categoria_consultar.html">Consultar</a>&emsp;
+            <a href="./html/categoria_atualizar.html">Atualizar</a>&emsp;
+            <a href="./html/categoria_apagar.html">Apagar</a><br><br>
+
+            <span class="titulo_menu">Produtos</span>&emsp;
+            <a href="./html/produto_cadastrar.html">Cadastrar</a>&emsp;
+            <a href="./html/produto_listar.html">Listar</a>&emsp;
+            <a href="./html/produto_consultar.html">Consultar</a>&emsp;
+            <a href="./html/produto_atualizar.html">Atualizar</a>&emsp;
+            <a href="./html/produto_apagar.html">Apagar</a><br><br>
+
+            <span class="titulo_menu">Estoque</span>&emsp;
+            <a href="./html/estoque_cadastrar.html">Cadastrar</a>&emsp;
+            <a href="./html/estoque_listar.html">Listar</a>&emsp;
+            <a href="./html/estoque_consultar.html">Consultar</a>&emsp;
+            <a href="./html/estoque_atualizar.html">Atualizar</a>&emsp;
+            <a href="./html/estoque_apagar.html">Apagar</a><br><br>
+
+            <span class="titulo_menu">Pedidos</span>&emsp;
+            <a href="./html/pedido_cadastrar.html">Cadastrar</a>&emsp;
+            <a href="./html/pedido_listar.html">Listar</a>&emsp;
+            <a href="./html/pedido_consultar.html">Consultar</a>&emsp;
+            <a href="./html/pedido_atualizar.html">Atualizar</a>&emsp;
+            <a href="./html/pedido_apagar.html">Apagar</a><br><br>
+
+            <span class="titulo_menu">Itens do Pedido</span>&emsp;
+            <a href="./html/item_pedido_cadastrar.html">Cadastrar</a>&emsp;
+            <a href="./html/item_pedido_listar.html">Listar</a>&emsp;
+            <a href="./html/item_pedido_consultar.html">Consultar</a>&emsp;
+            <a href="./html/item_pedido_atualizar.html">Atualizar</a>&emsp;
+            <a href="./html/item_pedido_apagar.html">Apagar</a><br><br>
+
+            <span class="titulo_menu">Entregas</span>&emsp;
+            <a href="./html/entrega_cadastrar.html">Cadastrar</a>&emsp;
+            <a href="./html/entrega_listar.html">Listar</a>&emsp;
+            <a href="./html/entrega_consultar.html">Consultar</a>&emsp;
+            <a href="./html/entrega_atualizar.html">Atualizar</a>&emsp;
+            <a href="./html/entrega_apagar.html">Apagar</a><br><br>
+            <hr>
+        </nav>
+    </header>
+    <main>
+        <h1>Sistema de Gerenciamento</h1>
+        <br><br>
+        <section id="secao_login">
+            <h2>Acesso ao Sistema</h2>
+            <br>
+            <form>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" required><br><br>
+                <label for="senha">Senha:</label><br>
+                <input type="password" id="senha" required><br><br>
+                <button type="submit" id="btn_login">Login</button><br><br>
+            </form>
+            <div id="resposta"></div>
+        </section>
+        <section id="secao_usuario_logado">
+            <h2 id="mensagem_boas_vindas">Seja bem vindo!</h2><br><br>
+            <button id="btn_logout">Logout / Sair</button>
+        </section>
+    </main>
+</body>
+</html>
